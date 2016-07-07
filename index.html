@@ -16,7 +16,7 @@
 
 	<body>
 		<div class="container">
-			<h1>What Are We Shopping For, Bro?</h1>
+			<h1 class="text-xs-center m-t-3">What Are We Shopping For, Bro?</h1>
 
 			<div ng-app="myShoppingList" ng-controller="myCtrl">
 				<ul>
@@ -25,11 +25,11 @@
 					</li>
 				</ul>
 				<!--submit item on enter key stroke-->
-				<form ng-submit="addItem()">
-					<input ng-model="addMe" />
-					</form>
-					<button ng-click="addItem()">Add</button>
+				<form class="text-xs-center" ng-submit="addItem()">
+					<input class="m-b-2 m-t-2" ng-model="addMe" />
+				</form>
 				
+				<div class="text-xs-center"><button class="text-xs-center" ng-click="addItem()">Add</button></div>
 				<p>{{errortext}}</p>
 			</div>
 		</div>
