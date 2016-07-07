@@ -8,6 +8,7 @@
 	<title>The Bro's Shopping App</title>
 	<meta name="description" content="The HTML5 Herald">
 	<meta name="author" content="SitePoint">
+	<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
 	<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
@@ -16,7 +17,7 @@
 
 	<body>
 		<div class="container">
-			<h1 class="text-xs-center m-t-3">What Are We Shopping For, Bro?</h1>
+			<h1 class="text-xs-center m-t-3">WHAT ARE WE EATING, BRO?</h1>
 
 			<div ng-app="myShoppingList" ng-controller="myCtrl">
 				<ul>
@@ -26,11 +27,11 @@
 				</ul>
 				<!--submit item on enter key stroke-->
 				<form class="text-xs-center" ng-submit="addItem()">
-					<input class="m-b-2 m-t-2" ng-model="addMe" />
+					<input class="m-b-2 m-t-2 text-xs-center" ng-model="addMe" placeholder="EAT NEXT?" autofocus />
 				</form>
 				
-				<div class="text-xs-center"><button class="text-xs-center" ng-click="addItem()">Add</button></div>
-				<p>{{errortext}}</p>
+				<div class="text-xs-center"><button class="text-xs-center" ng-click="addItem()">ADD</button></div>
+				<p class="text-xs-center">{{errortext}}</p>
 			</div>
 		</div>
 
